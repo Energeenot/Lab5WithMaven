@@ -1,0 +1,41 @@
+[{
+  "model" : "Mazda mazda6 2019",
+  "modifier": "sport",
+  "price" : 2559223,
+  "bodyType" : "SEDAN",
+  "engineType" : "ICE_PETROL",
+  "transmission" : "AUTOMATIC",
+  "color" : "WHITE"
+},
+  {"model" : "Toyota Camry 2018",
+    "modifier": "stock",
+    "price" : 1900000,
+    "bodyType" : "SEDAN",
+    "engineType" : "ICE_PETROL",
+    "transmission" : "MANUAL",
+    "color" : "GRAY"
+  },
+  {"model" : "BMW M5 2019",
+    "modifier": "sport",
+    "price" : 4000000,
+    "bodyType" : "SEDAN",
+    "engineType" : "ICE_DIESEL",
+    "transmission" : "AUTOMATIC",
+    "color" : "BLACK"
+  },
+  {"model" : "BMW M5 2019",
+    "modifier": "stock",
+    "price" : 3500000,
+    "bodyType" : "SEDAN",
+    "engineType" : "ICE_DIESEL",
+    "transmission" : "AUTOMATIC",
+    "color" : "BLACK"
+  },
+  {"model" : "Honda Civic 2007",
+    "modifier": "sport",
+    "price" : 650000,
+    "bodyType" : "SEDAN",
+    "engineType" : "ICE_PETROL",
+    "transmission" : "MANUAL",
+    "color" : "RED"
+  }]
