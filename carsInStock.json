@@ -1,41 +1,67 @@
 [{
-  "model" : "Mazda mazda6 2019",
   "modifier": "sport",
   "price" : 2559223,
-  "bodyType" : "SEDAN",
-  "engineType" : "ICE_PETROL",
-  "transmission" : "AUTOMATIC",
-  "color" : "WHITE"
+  "autoSpec" : {
+    "model": "Mazda mazda6 2019",
+    "bodyType": "SEDAN",
+    "engineType": "ICE_PETROL",
+    "transmission": "AUTOMATIC",
+    "color": "WHITE",
+    "numberOfPassengerSeats": 4,
+    "maxSpeed": 211,
+    "fuelConsumption": 13.8
+  }
 },
-  {"model" : "Toyota Camry 2018",
-    "modifier": "stock",
+  {"modifier": "stock",
     "price" : 1900000,
-    "bodyType" : "SEDAN",
-    "engineType" : "ICE_PETROL",
-    "transmission" : "MANUAL",
-    "color" : "GRAY"
+    "autoSpec" : {
+      "model": "Toyota Camry 2018",
+      "bodyType": "SEDAN",
+      "engineType": "ICE_PETROL",
+      "transmission": "MANUAL",
+      "color": "GRAY",
+      "numberOfPassengerSeats": 4,
+      "maxSpeed": 210,
+      "fuelConsumption": 13
+    }
   },
-  {"model" : "BMW M5 2019",
+  {
     "modifier": "sport",
     "price" : 4000000,
-    "bodyType" : "SEDAN",
-    "engineType" : "ICE_DIESEL",
-    "transmission" : "AUTOMATIC",
-    "color" : "BLACK"
+    "autoSpec": {
+      "model": "BMW M5 2019",
+      "bodyType": "SEDAN",
+      "engineType": "ICE_DIESEL",
+      "transmission": "AUTOMATIC",
+      "color": "BLACK",
+      "numberOfPassengerSeats": 4,
+      "maxSpeed": 250,
+      "fuelConsumption": 15.6
+    }
   },
-  {"model" : "BMW M5 2019",
-    "modifier": "stock",
+  {"modifier": "stock",
     "price" : 3500000,
-    "bodyType" : "SEDAN",
-    "engineType" : "ICE_DIESEL",
-    "transmission" : "AUTOMATIC",
-    "color" : "BLACK"
+    "autoSpec": {
+      "model": "BMW M5 2019",
+      "bodyType": "SEDAN",
+      "engineType": "ICE_DIESEL",
+      "transmission": "AUTOMATIC",
+      "color": "BLACK",
+      "numberOfPassengerSeats": 4,
+      "maxSpeed": 305,
+      "fuelConsumption": 16.9
+    }
   },
-  {"model" : "Honda Civic 2007",
-    "modifier": "sport",
+  {"modifier": "sport",
     "price" : 650000,
-    "bodyType" : "SEDAN",
-    "engineType" : "ICE_PETROL",
-    "transmission" : "MANUAL",
-    "color" : "RED"
+    "autoSpec": {
+      "model": "Honda Civic 2007",
+      "bodyType": "SEDAN",
+      "engineType": "ICE_PETROL",
+      "transmission": "MANUAL",
+      "color": "RED",
+      "numberOfPassengerSeats": 4,
+      "maxSpeed": 235,
+      "fuelConsumption": 12.7
+    }
   }]

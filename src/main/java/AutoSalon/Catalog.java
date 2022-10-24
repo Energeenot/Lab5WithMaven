@@ -5,10 +5,20 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Catalog {
-    private List autos;
+    private List<Auto> autos;
+
 
     public Catalog(){
-        autos = new LinkedList();
+        autos = new LinkedList<Auto>();
+    }
+
+
+    public void setAutos(List<Auto> autos) {
+        this.autos = autos;
+    }
+
+    public List<Auto> getAutos() {
+        return autos;
     }
 
     public Auto getAuto(String model) {
@@ -22,8 +32,8 @@ public class Catalog {
         return null;
     }
 
-    public void addAuto(String  model,  String modifier, double price, BodyType bodyType, EngineType engineType, Transmission transmission, Color color){
-        Auto auto = new Auto(model, modifier, price, bodyType, engineType, transmission, color);
+    public void addAuto(String modifier, double price, AutoSpec autoSpec){
+        Auto auto = new Auto(modifier, price, autoSpec);
         autos.add(auto);
     }
 
@@ -35,29 +45,29 @@ public class Catalog {
     public List<Auto> search(AutoSpec searchAutoSpec){
         List<Auto> matchingAutos = new LinkedList<>();
 //        searchAuto.getAutoSpec();
-        for (Object o : autos) {
-            Auto auto = (Auto) o;
+        for (int i = 0; i < autos.size(); i++) {
+            Auto auto = autos.get(i);
             AutoSpec autoSpec = auto.getAutoSpec();
-            String model = searchAutoSpec.getModel().toLowerCase();
-            if ((model != null) && (!model.equals("")) && (!model.equals(autoSpec.getModel().toLowerCase())))
-                continue;
-
-            if (searchAutoSpec.getBodyType() != autoSpec.getBodyType())
-                continue;
-            if (searchAutoSpec.getEngineType() != autoSpec.getEngineType())
-                continue;
-            if (searchAutoSpec.getTransmission() != autoSpec.getTransmission())
-                continue;
-            if (searchAutoSpec.getColor() != autoSpec.getColor())
-                continue;
-            matchingAutos.add(auto);
+            if (autoSpec.matches(searchAutoSpec)) {
+                matchingAutos.add(auto);
+            }
+        }
+//            AutoSpec autoSpec = auto.getAutoSpec();
+//            String model = searchAutoSpec.getModel().toLowerCase();
+//            if ((model != null) && (!model.equals("")) && (!model.equals(autoSpec.getModel().toLowerCase())))
+//                continue;
+//
+//            if (searchAutoSpec.getBodyType() != autoSpec.getBodyType())
+//                continue;
+//            if (searchAutoSpec.getEngineType() != autoSpec.getEngineType())
+//                continue;
+//            if (searchAutoSpec.getTransmission() != autoSpec.getTransmission())
+//                continue;
+//            if (searchAutoSpec.getColor() != autoSpec.getColor())
+//                continue;
+//            matchingAutos.add(auto);
             return matchingAutos;
         }
-        return null;
+
     }
 
-//    private static void initializeCatalog(Catalog catalog){
-//        AutoSpec
-//        catalog.addAuto(("Mazda mazda6 2019", BodyType.SEDAN, EngineType.ICE_PETROL, Transmission.AUTOMATIC, Color.WHITE), "sport",  2559223);
-//    }
-}

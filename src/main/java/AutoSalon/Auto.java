@@ -6,6 +6,7 @@ public class Auto {
     private double price;
     private AutoSpec autoSpec;
 
+    public Auto(){}
     public AutoSpec getAutoSpec() {
         return autoSpec;
     }
@@ -42,8 +43,9 @@ public class Auto {
 //        return color;
 //    }
 
-    public Auto(String model, String modifier, double price, BodyType bodyType, EngineType engineType, Transmission transmission, Color color) {
-        this.autoSpec = new AutoSpec(model, bodyType, engineType, transmission, color);
+    public Auto(String modifier, double price,AutoSpec autoSpec) {
+//        this.autoSpec = new AutoSpec(model, bodyType, engineType, transmission, color);
+        this.autoSpec = autoSpec; ////
         this.modifier =  modifier;
         this.price = price;
     }
