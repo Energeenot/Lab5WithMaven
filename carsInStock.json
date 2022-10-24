@@ -35,8 +35,8 @@
       "transmission": "AUTOMATIC",
       "color": "BLACK",
       "numberOfPassengerSeats": 4,
-      "maxSpeed": 250,
-      "fuelConsumption": 15.6
+      "maxSpeed": 305,
+      "fuelConsumption": 16.9
     }
   },
   {"modifier": "stock",
@@ -48,8 +48,8 @@
       "transmission": "AUTOMATIC",
       "color": "BLACK",
       "numberOfPassengerSeats": 4,
-      "maxSpeed": 305,
-      "fuelConsumption": 16.9
+      "maxSpeed": 250,
+      "fuelConsumption": 15.6
     }
   },
   {"modifier": "sport",

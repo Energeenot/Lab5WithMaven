@@ -1,0 +1,10 @@
+{
+  "model": "BMW M5 2019",
+  "bodyType": "SEDAN",
+  "engineType": "ICE_DIESEL",
+  "transmission": "AUTOMATIC",
+  "color": "BLACK",
+  "numberOfPassengerSeats": 4,
+  "maxSpeed": 305,
+  "fuelConsumption": 16.9
+}

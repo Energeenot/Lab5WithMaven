@@ -74,16 +74,16 @@ public class AutoSpec {
         }
 //        пункты из б
 
-//        if (numberOfPassengerSeats != otherSpec.numberOfPassengerSeats){
-//            return false;
-//        }
-//
-//        if (maxSpeed != otherSpec.maxSpeed){
-//            return false;
-//        }
-//        if (fuelConsumption != otherSpec.fuelConsumption){
-//            return false;
-//        }
+        if (numberOfPassengerSeats != otherSpec.numberOfPassengerSeats){
+            return false;
+        }
+
+        if (maxSpeed != otherSpec.maxSpeed){
+            return false;
+        }
+        if (fuelConsumption != otherSpec.fuelConsumption){
+            return false;
+        }
 
         return true;
     }
